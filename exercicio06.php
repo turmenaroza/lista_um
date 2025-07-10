@@ -16,11 +16,22 @@
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $numero = $_POST['numero'];
 
-    for ($i = 1; $i <= 10; $i++) {
-        $result = $numero / $i;
-        echo "$numero / $i = $result<br>";
-    }
+   
+
+    if (isset($_POST['divisores'])) {
+        $numero = $_POST['numero'];
+        $divisores = [];
+
+        for ($i = 1; $i <= $numero; $i++) {
+            if ($numero % $i == 0) {
+                $divisores[] = $i;
+            }
+        }
+
+        echo "Os divisores de $numero são: " . implode(", ", $divisores);
+
 }
+  }
     ?>
 </body>
 </html>
