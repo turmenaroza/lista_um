@@ -1,7 +1,7 @@
 
 <html>
 <head>
-    <title>celsius to fahrenheit Conversion</title>
+    <title>celsius para fahrenheit</title>
 </head>
 <body>
     <form action="" method="post">
