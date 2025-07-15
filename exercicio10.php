@@ -7,7 +7,7 @@
 <body>
 
 <form method="POST" action="">
-        <label for="digita_numero">Digite um número</label>
+        <label for="digita_numero">Digiteum numero</label>
         <input type="number" id="digita_numero" name="digita_numero" required>
         <button type="submit" name="verificar_digitado">Verificar</button>
    </form>
